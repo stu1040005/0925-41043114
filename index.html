@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶卡牌遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>4x4卡牌記憶遊戲</h1>
+    
+    <div class="game-container">
+        <div class="card-container" id="card-container">
+            <!-- 卡牌将由 JavaScript 动态生成 -->
+        </div>
+    </div>
+    <div class="controls">
+        <button id="startButton">開始遊戲</button>
+        <div id="timer" style="display: none;">用時: <span id="time">0</span> 秒</div>
+        <button id="restartButton" style="display: none;">重新開始</button>
+    </div>
+    <div></div>
+        <button id="showFrontButton">全翻正面</button>
+        <button id="showBackButton">全翻背面</button>
+    </div>
+    <div>
+        <label for="cardType">選擇卡牌類型：</label>
+        <select id="cardType">
+            <option value="animals">動物</option>
+            <option value="plants">植物</option>
+        </select>
+    </div>
+    <div id="card-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
